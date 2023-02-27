@@ -166,11 +166,8 @@ const promptForIntern = () => {
 // write the HTML
 const buildPage = () => {
     const html = render(employees);
+
     fs.writeFile(outputPath, html, (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log("Your HTML has been generated");
-      }
+        err ? console.error(err) : console.log("Your HTML has been generated");
     });
   };

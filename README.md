@@ -6,8 +6,6 @@ A CLI app to create a single-page HTML, using node.js and conducting tests via J
 
 The output is a webpage which renders all the employees on a managers team, which are input by the manager. This allows all the teammates to be able to find eachother's contact details quickly.
 
-Click the link below to see a demo of the app's functionality.
-
 ![Screenshot of output](./assets/screenshot.PNG)
 
 ## Table of Contents: 

@@ -1,7 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const employee = [];
+const employees = [];
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -46,7 +46,7 @@ inquirer
       managerOffice
     );
     // push to array
-    employee.push(manager);
+    employees.push(manager);
     // prompt for next action
     promptForNextEmployee();
   });
@@ -114,7 +114,7 @@ const promptForEngineer = () => {
       );
 
       // push inputs to the array
-      employee.push(engineer);
+      employees.push(engineer);
 
       // prompt for next action
       promptForNextEmployee();
@@ -157,14 +157,20 @@ const promptForIntern = () => {
         internSchool
       );
       // push inputs to array
-      employee.push(intern);
+      employees.push(intern);
       // prompt for next action
       promptForNextEmployee();
     });
 };
 
-// I want to split this into a page-template.js file
-// oh wait, it's already done...wooohooo
+// write the HTML
 const buildPage = () => {
-  // render(myArrayOfTeamMembers)
-};
+    const html = render(employees);
+    fs.writeFile(outputPath, html, (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log("Your HTML has been generated");
+      }
+    });
+  };

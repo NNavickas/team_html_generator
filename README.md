@@ -8,7 +8,7 @@ The output is a webpage which renders all the employees on a managers team, whic
 
 Click the link below to see a demo of the app's functionality.
 
-[Demo Video]()
+![Screenshot of output](./assets/screenshot.PNG)
 
 ## Table of Contents: 
 - [Installation](#installation)
@@ -33,7 +33,7 @@ You can run this application using command:
 ``` node index.js ```
 
 The structure of the README is found in the page-template.js file. Make any alterations you'd like, to ensure the displays matches questions and contact info you need for your team.
-Once you create your file, it will be generated as the generateTeam.html for you to use.
+Once you create your file, it will be generated as the team.html for you to use.
 
 ## Contributing to this Repo
 

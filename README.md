@@ -45,6 +45,14 @@ To test, run the following command, followed by directory of the employee type y
 
 ``` npm test ```
 
+## Technologies Used
+
+Jest
+node.js
+CSS
+HTML
+JavaScript
+
 ## Questions
 
 I hope you find this useful. If you have any questions or suggestions about the repo, open an issue or contact me directly at natalienavickas@hotmail.com. 
